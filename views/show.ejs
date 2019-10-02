@@ -1,0 +1,54 @@
+<% include ./partials/header %>
+
+  <br>
+  
+ 
+
+  
+<!-- <div class="ui main text container segment">
+    <div class="ui huge header"><%= blog.title %></div>
+    <br>
+    <div class="ui top attached ">
+        <div class="item">
+            <img class="ui centered rounded image" src="<%= blog.image %>" >
+            <div class="content">
+                <span><%= blog.created.toDateString() %></span>
+            </div>
+            <div class="description">
+                <p><%- blog.body %></p>
+            </div>
+            <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+            <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
+        </div>
+    </div>
+    
+</div> -->
+
+<div class="container">
+  <div class="jumbotron">
+      <div class="display-4 mx-auto text-center"><%= blog.title %></div>
+      <br>
+      <span><%= blog.created.toDateString() %></span>
+
+      <div class="display-5">Details:</div>
+      <p><%= blog.image %></p>
+      <br>
+      <div class="display-5">Plan Details:</div> 
+      <p><%- blog.body %></p>
+
+      <br>
+      <hr>
+      <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+            <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
+
+  </div>
+
+</div>
+
+
+<% include ./partials/footer %>
+

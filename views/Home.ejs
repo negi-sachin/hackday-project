@@ -1,0 +1,68 @@
+<% include ./partials/header %>
+
+<style>
+        body {
+          position: relative;
+          
+        }
+        ul.nav-pills {
+          top: 200px;
+          position: fixed;
+          font-size: 20px;
+        }
+        div.col-8 div {
+          height: 400px;
+        }
+        </style>
+      </head>
+      <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+      <br>
+      <div class="container-fluid ">
+        <div class="row mr-2 mb-4">
+          <nav class="col-sm-3 col-4" id="myScrollspy">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#section1">Earthquake</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Wild Fires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Floods</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="#section4">Landslides</a>
+                  </li>
+              <li class="nav-item">
+                        <a class="nav-link" href="#section5">Cyclones</a>
+                      </li>   
+             
+            </ul>
+          </nav>
+
+       <!-- disaster DAta here    -->
+          <div class="col-sm-9 col-8">
+            <div id="section1" class=" jumbotron border" style="overflow: auto">    
+                    <% include ./earthquake %>    
+            </div>
+            <div id="section2" class=" jumbotron border" style="overflow: auto"> 
+                    <% include ./fire %> 
+              
+            </div>        
+            <div id="section3" class=" jumbotron border" style="overflow: auto">         
+                    <% include ./flood %> 
+            </div>
+            <div id="section4" class=" jumbotron border" style="overflow: auto">         
+                    <% include ./lands %>
+            </div>      
+            <div id="section5" class=" jumbotron border" style="overflow: auto">         
+              <% include ./cyclone %>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </body>
+    
+      <% include ./partials/footer %>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>QUAD X</title>
+        <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+        <link  rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
+        <!-- //bootstrap -->
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+  <script src="typed.js"></script>
+  <script src="autotype.js"></script>
+
+  
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    </head>
+    <body>
+        <div class="text-center p-2 m-0 bg-dark display-2 text-light"><i class='fas fa-poo-storm' style='font-size:48px;color:rgb(219, 23, 23)'></i> <span id="typed"></span></div>
+        <div class="ui bg-dark p-2 m-0 sticky-top inverted menu">
+            <div class="ui container">
+                    <i class='fas fa-poo-storm float-left' style='font-size:48px;color:rgb(219, 23, 23)'> </i>
+                <a href="/home" class="item">Disaster</a> 
+                <a href="/home" class="item">Home<i class='fas fa-home ml-2' style='font-size:20px;'> </i></a>
+                <a href="/blogs" class="item">Plans List<i class='fas fa-clipboard-list ml-2' style='font-size:20px'></i></a>
+                <a href="/blogs/new" class="item">New Plan<i class='far fa-plus-square ml-2' style='font-size:20px'></i></a>
+                <a href="#" class="item" data-toggle="popover" title="Helpline Number" data-placement="bottom" data-trigger="focus" data-content="+91-11-23782698(O) +91-11-23382365 (Fax)">Helpline Number<i class='fas fa-phone ml-2' style='font-size:20px'></i></a>
+            </div>
+            
+        </div>
+        <div class="" style="position:fixed;bottom: 40;right:10;z-index: 2;">
+        <div class="popup" style="display:none;">
+          <iframe
+          allow="microphone;"
+          width="350"
+          height="430"
+          src="https://console.dialogflow.com/api-client/demo/embedded/c2652930-f09e-4a2a-b3d8-67a9bf9a5bcd">
+      </iframe>
+             </div>
+             <button class="btn btn-info " style="font-size: 20px;">Chat with us<i class='far fa-comment ml-2' style='font-size:22px'></i></button>
+            </div>
+    </body>
+<script>
+                $(document).ready(function(){
+                  $('[data-toggle="popover"]').popover();
+                });
+// chatbot js
+                const button = document.querySelector('button');
+const popup = document.querySelector('.popup');
+
+button.addEventListener('click', ()=>{
+  popup.style.display === 'none' ? popup.style.display = 'block' : popup.style.display = 'none';
+})
+
+
+</script>
